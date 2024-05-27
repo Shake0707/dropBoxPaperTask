@@ -9,7 +9,7 @@ import About from './pages/About.tsx';
 import ErrorElement from './components/ErrorElement.tsx';
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <Route path='/' element={<Main />} errorElement={<ErrorElement />}>
+  <Route path='/dropBoxPaperTask' element={<Main />} errorElement={<ErrorElement />}>
     <Route index element={<Catalog />} />
     <Route path='about/:region' element={<About />} />
   </Route>

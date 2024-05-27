@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useGetData } from '../hooks/useGetData';
 import { Button, Container, Stack } from 'react-bootstrap';
 import Loader from '../components/Loader';
+import forward from "../assets/forward.svg"
 
 const About: FC = () => {
     const params = useParams();
@@ -12,8 +13,8 @@ const About: FC = () => {
 
     return (
         <Container>
-            <Link to={"/"}>
-                <img src='/forward.svg' width={70} style={{
+            <Link to={"/dropBoxPaperTask"}>
+                <img src={forward} width={70} style={{
                     rotate: "180deg"
                 }} />
             </Link>

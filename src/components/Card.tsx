@@ -16,7 +16,7 @@ const Card: FC<IProps> = ({ data }) => {
             <CardBody>
                 <CardSubtitle>{data.subregion}</CardSubtitle>
                 <CardTitle>{data.name.common}</CardTitle>
-                <Button href={"/about/" + data.name.common.toLocaleLowerCase()}>About</Button>
+                <Button href={"/dropBoxPaperTask/about/" + data.name.common.toLocaleLowerCase()}>About</Button>
             </CardBody>
         </div>
     )
