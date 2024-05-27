@@ -6,8 +6,6 @@ import CatalogSkeleton from '../components/skeletons/CatalogSkeleton';
 
 const Catalog: FC = () => {
     const { data, error, pending } = useGetData("all");
-    console.log(data);
-    
 
     return (
         <Container className='mt-5'>
