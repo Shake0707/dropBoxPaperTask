@@ -7,9 +7,7 @@ import forward from "../assets/forward.svg"
 
 const About: FC = () => {
     const params = useParams();
-
     const { data, error, pending } = useGetData("name/" + params.region?.replace(/%20/g, " "));
-    console.log(data);
 
     return (
         <Container>
